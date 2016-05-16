@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <link href="/lib/css/font-awesome.css" rel="stylesheet" />
+    <link href="/lib/css/bootstrap.css" rel="stylesheet" />
+    <link href="/lib/site.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="">
+    <title>
+        Rough Type
+    </title>
+
+    <body ng-app="randomApp" ng-controller="checkType">
+
+        <div class="container">
+            <h1> Checking Type </h1>
+            <!-- <div>
+              <div class="alert alert-success" ng-show = "status">{{status}}
+              </div>
+            </div> -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        Type check :
+                        <select ng-model="type" ng-options="type.name for type in selectedType">
+                            <option value="">Please Select Element</option>
+                        </select>
+                        {{type.name}}
+                    </div>
+                    <div class="col-md-4">
+                        Count to produce
+                        <select ng-model="selectedNumber" ng-options='num for num in selectedTotal'>
+                            <option value="">Please Select Number</option>
+                        </select>
+                        {{selectedNumber}}
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-primary btn-md" ng-click="submitData(type.name,selectedNumber)">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <br/>
+            </div>
+            <div id="radio_home" class="homeCard">
+
+            </div>
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-primary btn-md" ng-click="submitResult()">Submit</button>
+
+            <div>
+        </div>
+
+        <script src="/lib/jquery-2.2.3.min.js"></script>
+        <script src="/lib/angular.min.js"></script>
+        <script src="/lib/bootstrap.min.js"></script>
+
+        <script src="/app/app.js"></script>
+        <script src="/app/controllers/check.js"></script>
+
+    </body>
+</head>
+
+</html>
