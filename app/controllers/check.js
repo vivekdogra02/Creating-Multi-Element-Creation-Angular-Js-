@@ -35,7 +35,7 @@
                         var inputno = '<select ng-model = {{$scope.typeValues[0]}} >';
                         for (var j = 1; j <= len; j++) {
                             inputno += '<option value = Combo ' + j + '>Combo ' + j + ' </option>';
-                            result[] = obj.push(inputno[j]);
+                            result = obj.push(inputno[j]);
                             $scope.result.push(result);
                         }
                         inputno += '</select></br>';
